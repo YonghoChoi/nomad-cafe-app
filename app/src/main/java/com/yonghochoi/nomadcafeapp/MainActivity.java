@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         // 웹뷰 셋팅
         mWebView = (WebView) findViewById(webView);             //xml 자바코드 연결
         mWebView.getSettings().setJavaScriptEnabled(true);      //자바스크립트 허용
+        mWebView.getSettings().setDatabaseEnabled(true);
+        mWebView.getSettings().setDomStorageEnabled(true);
 
         mWebView.loadUrl("https://workingspace.netlify.app/");  //웹뷰 실행
         mWebView.setWebChromeClient(new WebChromeClient());     //웹뷰에 크롬 사용 허용//이 부분이 없으면 크롬에서 alert가 뜨지 않음
