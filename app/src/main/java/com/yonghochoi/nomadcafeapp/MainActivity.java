@@ -17,7 +17,6 @@ import static com.yonghochoi.nomadcafeapp.R.id.webView;
 public class MainActivity extends AppCompatActivity {
     private WebView mWebView;
 
-    private String myUrl = "http://";// 접속 URL (내장HTML의 경우 왼쪽과 같이 쓰고 아니면 걍 URL)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
